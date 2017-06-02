@@ -1,0 +1,23 @@
+{
+  "name": "webpack-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/horbonosvadym/webpack-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/horbonosvadym/webpack-starter/issues"
+  },
+  "homepage": "https://gitlab.com/horbonosvadym/webpack-starter#README",
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}
