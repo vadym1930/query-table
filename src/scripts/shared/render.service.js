@@ -1,10 +1,8 @@
 import { render } from 'mustache';
 export {writeData};
 
-console.log(render);
 function writeData(template, target, data){
-  const what = document.getElementById(template);
-  const where = document.getElementById(target);
-  const rendered = render(what.innerHTML, {data});
-  where.innerHTML = rendered;
+  const what = document.getElementsByClassName(template)[0].innerHTML;
+  const rendered = render(what, {data});
+  document.getElementsByClassName(target)[0].innerHTML = rendered;
 }
