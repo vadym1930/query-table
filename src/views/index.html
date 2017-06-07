@@ -5,10 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Webpack-starter</title>
+    <title>Webpack 2 intro</title>
 </head>
 <body>
-    <h1>Webpack-starter</h1>
+    <h1>Query result goes here</h1>
+    <ul class="titles">
+        <li data-name="title">Title</li>
+        <li data-name="id">Id</li>
+        <li data-name="original_language">Lang</li>
+        <li data-name="popularity">Pop</li>
+        <li data-name="vote_count">Votes</li>
+        <li data-name="release_date">Date release</li>
+        <li data-name="vote_average">Vote average</li>    
+    </ul>
+    <ul id="movies"></ul>
+    <script id="template" id="profile-template" type="x-tmpl-mustache">
+            {{#elements}}
+                <li>{{title}}</li>
+                <li>{{id}}</li>
+                <li>{{original_language}}</li>
+                <li>{{popularity}}</li>
+                <li>{{vote_count}}</li>
+                <li>{{release_date}}</li>
+                <li>{{vote_average}}</li>
+            {{/elements}}
+    </script>    
 
 </body>
 </html>
