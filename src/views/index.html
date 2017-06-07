@@ -24,7 +24,8 @@
         </header>
         <div class="content">
             <div class="container">
-                <ul class="paginations">
+                <p class="myQuery"></p>
+                <ul class="pagination">
 
                 </ul>
                 <div class="table-responsive">
@@ -66,10 +67,10 @@
             </tr>
         {{/data}}
     </script>
-    <script class="template" type="x-tmpl-mustache">
-        {{#pages}}
-            <li>{{num}}</li>
-        {{/pages}}    
+    <script class="pag-template" type="x-tmpl-mustache">
+        {{#data}}
+            <li><a href="{{.}}">{{.}}</a></li>
+        {{/data}}    
     </script>      
 
 </body>
