@@ -69,9 +69,10 @@
         {{/data}}
     </script>
     <script class="pag-template" type="x-tmpl-mustache">
-        {{#data}}
-            <li><a href="{{.}}">{{.}}</a></li>
-        {{/data}}    
+
+        {{#data.pages}}
+            <li class="page"><a rel="{{data.query}}" href="javascript:void(0)">{{.}}</a></li>
+        {{/data.pages}}    
     </script>      
 
 </body>

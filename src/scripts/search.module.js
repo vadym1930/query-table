@@ -6,7 +6,7 @@ import { getPagination } from './shared/paginator.service';
   const searchBtn = document.getElementsByTagName('button')[0];
 // bind event
   searchBtn.addEventListener('click', handler, false);
-
+//define handler
   function handler(e){
     e.preventDefault();
     const query = val.value;
@@ -19,9 +19,7 @@ import { getPagination } from './shared/paginator.service';
           }
           res.json().then((data)=>{
             const elements = data.results;
-            console.log(data.total_pages);
-            getPagination(data.total_pages);
-            showQuery('myQuery', unionQuery);
+            getPagination(data.total_pages, unionQuery, 8);
             writeData('template', 'movies', elements);
             val.value = '';
           })
