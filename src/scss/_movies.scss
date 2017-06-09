@@ -1,10 +1,19 @@
-// $width: 100% !default
-// .movies, .titles{
-//     font-size: 0;
-//     li{
-//         width: $width/7;
-//         font-size: 18px;
-//         display: inline-block;
-//         vertical-align: top;
-//     }
-// }
+th{
+  font-weight: 900;
+  font-size: 20px;
+  font-family: serif;
+  cursor: pointer;
+   &:before {
+    content: "\e155";
+    font-family: 'Glyphicons Halflings';
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #e95420;  
+  }
+  &.sorted{
+    &:before{
+      content: "\e156";
+    }
+  }
+}
