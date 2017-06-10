@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --open",
+    "dev": "webpack-dev-server --open",
     "prod": "./node_modules/.bin/webpack -p"
   },
   "repository": {
