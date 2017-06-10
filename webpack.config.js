@@ -49,7 +49,10 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: './src/views/index.html',
-            hash: true
+            hash: true,
+            minify: {
+                collapseWhitespace: true
+            }
         })
     ]
 }

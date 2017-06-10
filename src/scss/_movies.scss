@@ -10,10 +10,12 @@ th{
     font-size: 14px;
     font-weight: normal;
     color: #e95420;  
+    transition: all .3s linear;
   }
   &.sorted{
     &:before{
       content: "\e156";
+      color: #6F2DA8;
     }
   }
 }

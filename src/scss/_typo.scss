@@ -1,6 +1,11 @@
+
 body{
     margin-top: 50px;
+    background: snow;
+    font-family: sans-serif;
+    ::selection { background: #CEC8EF; }
 }
+
 h1{
     margin: 0;
 }
@@ -10,4 +15,18 @@ h1{
 }
 caption{
     padding-left: 5px;
+}
+.pagination{
+    margin: 0;
+}
+.form-cover, .main-heading{
+    padding-bottom: 20px;
+}
+.form-cover{
+    .input-group{
+        width: 30%;
+        input{
+            font-style: italic;
+        }
+    }
 }

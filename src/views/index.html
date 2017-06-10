@@ -11,23 +11,22 @@
     <main>
         <header>
             <div class="container">
-                <form action="">
-                    <div class="input-group">
-                        <span class="input-group-btn">
-                            <button class="btn btn-info">go</button>
-                        </span>
-                        <input id="search" class="form-control" placeholder="search" type="text">
-                    </div>
-                </form>
-                <h1>Query result goes here</h1>
+                <div class="form-cover">
+                    <form action="">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-info">go</button>
+                            </span>
+                            <input id="search" class="form-control" placeholder="search" type="text">
+                        </div>
+                    </form>
+                </div>
+                <h1 class="main-heading">Query result goes next</h1>
             </div>
         </header>
         <div class="content">
             <div class="container">
-                <p class="myQuery"></p>
-                <ul class="pagination">
-
-                </ul>
+                <ul class="pagination"></ul>
                 <div class="table-responsive">
                     <table class="table table-condensed table-striped">
                     <caption>Query-table 2.0</caption>
@@ -42,9 +41,7 @@
                                 <th data-name="vote_average">Vote average</t>    
                             </tr>
                         </thead>
-                        <tbody class="movies">
-
-                        </tbody>
+                        <tbody class="movies"></tbody>
                     </table>
                 </div>
             </div>
@@ -69,11 +66,9 @@
         {{/data}}
     </script>
     <script class="pag-template" type="x-tmpl-mustache">
-
         {{#data.pages}}
             <li class="page"><a rel="{{data.query}}" href="javascript:void(0)">{{.}}</a></li>
         {{/data.pages}}    
     </script>      
-
 </body>
 </html>
