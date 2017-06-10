@@ -3,5 +3,5 @@ export const urls = {
   defaultAction: 'discover/movie?',
   apiKey       : 'api_key=7e9aa3015d3ebeaa49578d245d8cdf1b',
   searchAction : 'search/movie?'
-}
+};
 

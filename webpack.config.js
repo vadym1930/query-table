@@ -34,7 +34,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: ExtractTextPLugin.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader', 'sass-loader'],
+                    use: ['css-loader', 'autoprefixer-loader', 'sass-loader'],
                     publicPath: '/dist'
                 })
             }

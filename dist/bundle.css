@@ -1,5 +1,2 @@
-body {
-  background: lightgreen;
-  font-family: sans-serif; }
-  body p {
-    font-size: 18px; }
+body{margin-top:50px}h1{margin:0}.container{padding-left:40px;padding-right:20px}caption{padding-left:5px}th{font-weight:900;font-size:20px;font-family:serif;cursor:pointer;-webkit-filter:grayscale(90%);filter:grayscale(90%)}th:before{content:"\E155";font-family:Glyphicons Halflings;padding-right:10px;font-size:14px;font-weight:400;color:#e95420}th.sorted:before{content:"\E156"}body{background:snow;font-family:sans-serif}body p{font-size:18px}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJidW5kbGUuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
