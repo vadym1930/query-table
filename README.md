@@ -1,7 +1,7 @@
 ## How to start
 1. '_yarn install_'
 2. '_yarn run dev_' webpack-dev-server runs in localhost:4000
-3. '_yarn run prod_' write files intj dist folder
+3. '_yarn run prod_' write files into dist folder
 
 ### Query-table 2.0 can:
 1. Search for films and display results in the table
