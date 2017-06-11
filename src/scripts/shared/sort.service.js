@@ -1,5 +1,9 @@
 export { dynamicSort };
-
+/**
+ * find on the stack overflow,
+ * good thing, sorting array of object if put onside sort native method
+ * @param {string} property 
+ */
 function dynamicSort(property) {
     let sortOrder = 1;
 

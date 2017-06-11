@@ -1,3 +1,4 @@
+// url object, helps create need url
 export const urls = {
   defaultUrl   : 'https://api.themoviedb.org/3/',
   defaultAction: 'discover/movie?',
