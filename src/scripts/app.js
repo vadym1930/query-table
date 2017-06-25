@@ -4,6 +4,9 @@ import './search.module';
 import './pagination.module';
 import './sort.module';
 import './shared/message.service';
+import { playTl, setTl } from './gsap.module';
+
+console.log(playTl);
 
 // grab methods and vars
 import { writeData } from './shared/render.service';
@@ -33,5 +36,7 @@ fetch(unionQuery)
             writeData('template', 'movies', elements);
             // render pagination
             getPagination(data.total_pages, unionQuery, pagesLimit); 
+            setTl();
+            playTl();
         });
     });

@@ -2,6 +2,7 @@
 import { writeData } from './shared/render.service';
 import { urls } from './shared/url.service';
 import { getPagination } from './shared/paginator.service';
+import { setTl } from './gsap.module';
 
 // cache the DOM and set settings
 const val        = document.getElementById('search');
@@ -43,6 +44,7 @@ searchBtn.addEventListener('click', handler, false);
             writeData('template', 'movies', elements);
             // clear input after searching
             val.value = '';
+            setTl();
           });
         });
     } else {

@@ -1,5 +1,7 @@
 // import service
 import { writeData } from './shared/render.service';
+import { setTl } from './gsap.module';
+
 // cache the DOM
 const list = document.getElementsByClassName('pagination')[0];
 
@@ -32,6 +34,7 @@ function handler(e) {
         localStorage.setItem('secret', info);
         // render table width page results          
         writeData('template', 'movies', elements);
+        setTl();
       });
     });
 }
